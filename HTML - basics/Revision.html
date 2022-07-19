@@ -59,18 +59,29 @@
   <hr>
   <h1>Payment Form</h1>
   <h2>Payment Information</h2>
-  <form>
-    <p> <strong>Name:</strong> <input type="text" name="fname:"></p>
+  <form action="mailto:yadneshahirrao.19@gmail.com" method="post" enctype="text/plain">
+    <p> <strong>Name:</strong> <input type="text" name="fname:" required></p>
     <fieldset>
       <legend> <strong>Gender</strong> </legend>
       <p>
-        Male <input type="radio" name="gender" value="">
-        Female <input type="radio" name="gender" value="">
+        Male <input type="radio" name="gender" value="" required>
+        Female <input type="radio" name="gender" value="" required>
       </p>
     </fieldset>
     <p> <strong>Address:</strong> <textarea name="address" rows="8" cols="50"></textarea> </p>
     <p> <strong>Email:</strong> <input type="email" name="email" value=""> </p>
-    
+    <p> <strong>Pincode:</strong> <input type="number" name="pincode" value=""> </p>
+    <p>
+      Card Type:
+      <select class="" name="Card Type:">
+        <option value=""> Choose Card Type </option>
+        <option value="Rupay">Rupay</option>
+        <option value="Visa">Visa</option>
+        <option value="MasterCard"> MasterCard</option>
+      </select>
+      <input type="submit" value="Pay Now">
+    </p>
+
   </form>
 </body>
 
